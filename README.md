@@ -1,4 +1,7 @@
 # The *Tabula Generalis* of Ramon Llull
+
+<img src="./1.svg" align="right" />
+
 Ramon Llull (or Raimundus Lullius/Raymond Lully) was a 13<sup>th</sup>-century philosopher who spent his life developing a kind of theological-philosophical system based in the mathematics of combinatorics. This repository contains [TikZ](https://tikz.dev/) code that draws the four figures of the *Ars Brevis*, a 1290 work that reduced the elements of his system to only 9. I made these for a translation/edition of Umberto Eco’s *La Ricerca della Lingua Perfetta nella Cultura Europea*, and the versions in that book are unsatisfying, some parts can barely be read. Only by comparing with other sources was I able to discern the small text.
 
 # Sources
