@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{decorations.text}
+
+\begin{document}
+
+\begin{tikzpicture}
+
+% Rings
+\foreach \r in {2,2.7,3.4,4.1}
+  \draw (0,0) circle [radius=\r cm];
+
+% Rays
+\foreach \x in {0,...,8}
+  \draw (270+40*\x:2cm) -- (270+40*\x:4.1cm);
+
+% Rings of Letters
+\foreach \y in {0,1,2} {
+  % Letters
+  \foreach \x in {0,...,8} {
+
+    \pgfmathparse{{"G","H","I","K","B","C","D","E","F"}[\x]}
+    \edef\letter{\pgfmathresult}
+
+    \draw [decoration={
+            text along path,
+            text={\letter},
+            text align={center}
+           },
+           decorate]
+
+      (270-40*\x:2.2cm+0.7cm*\y) % Start Location
+
+      arc[start angle=270-40*\x,
+          delta angle=-40,
+          radius=2.2cm+0.7cm*\y];
+  }
+}
+
+\end{tikzpicture}
+
+\end{document}
