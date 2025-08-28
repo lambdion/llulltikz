@@ -2,7 +2,7 @@
 
 <img src="./1.svg" align="right" />
 
-Ramon Llull (or Raimundus Lullius/Raymond Lully) was a 13<sup>th</sup>-century philosopher who spent his life developing a kind of theological-philosophical system based in the mathematics of combinatorics. This repository contains [TikZ](https://tikz.dev/) code that draws the four figures of the *Ars Brevis*, a 1290 work that reduced the elements of his system to only 9. I made these for a translation/edition of Umberto Eco’s *La Ricerca della Lingua Perfetta nella Cultura Europea*, and the versions in that book are unsatisfying, some parts can barely be read. Only by comparing with other sources was I able to discern the small text.
+Ramon Llull (or Raimundus Lullius/Raymond Lully) was a 13<sup>th</sup>-century philosopher who spent his life developing a kind of theological-philosophical system based in the mathematics of combinatorics. This repository contains [TikZ](https://tikz.dev/) code that draws the four explanatory figures of the *Ars Brevis*, a 1290 work that reduced the elements of his system to only 9. These four figures are accompanied by a table which explains the meanings of the nine symbols (the letters B–K, omitting J). I made these for a translation/edition of Umberto Eco’s *La Ricerca della Lingua Perfetta nella Cultura Europea* because the graphics in that book are unsatisfying, some parts can barely be read. Only by comparing with other sources was I able to discern the small text. Therefore I created these higher-quality diagrams which can be easily used at large scales, whilst still preserving the text and layout of the versions in the book.
 
 # Sources
 
@@ -12,7 +12,7 @@ The Stanford Encyclopedia of Philosophy has [an extensive article on Llull](http
 
 There is a [high quality scan of an original manuscript](https://archive.org/details/illuminatisacrep00llul/page/n33/) on the Internet Archive, which has helpful color additions, though the writing contains misleading scribal abbreviations.
 
-[*Ramon Llull’s Ars Magna.* (Jensen, 2018)](https://doi.org/10.1007/978-3-319-74718-7_3) also contains some very readable Latin scans, with non-handwritten text.
+[*Ramon Llull’s Ars Magna*](https://doi.org/10.1007/978-3-319-74718-7_3) (Jensen, 2018) also contains some very readable Latin scans, with non-handwritten text.
 
 # Technical
 The code uses at several points the following construction in order to print a given element of a list of strings within a `\foreach`:
@@ -47,3 +47,5 @@ All documents should typeset correctly with `pdflatex`, or the `diagram` environ
 ``` sh
 for f in ./*.tex; do pdflatex "$f"; done
 ```
+
+The first diagram is available as an SVG, and a PDF is included that contains all four.
